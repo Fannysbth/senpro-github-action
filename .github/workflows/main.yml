@@ -1,4 +1,3 @@
-# Case 1: Jobs untuk Test Build
 name: Test, Build, and Deploy | Modul 01 - Lab2.2 Senior Project
 
 on:
@@ -20,7 +19,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
 
       - run: npm install
       - run: npm run build
